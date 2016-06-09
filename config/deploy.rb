@@ -8,10 +8,10 @@ set :user                    , 'ubuntu'
 set :application             , 'todolist'
 set :deploy_to               , "/home/#{fetch(:user)}/www/#{fetch(:application)}"
 set :scm                     , :git
-set :repo_url                , 'git@github.com:user/reponame.git'
+set :repo_url                , 'git@github.com:jCrip/todoapp.git'
 set :branch                  , :master
 set :keep_releases           , 5
-set :ssh_options             , { forward_agent: true, user: fetch(:user) , keys: %w(~/.ssh/id_rsa.pub) }
+set :ssh_options             , { forward_agent: true, user: fetch(:user), keys: %w(~/Desktop/desafiolatam_alumnos.pem) }
 
 ## Linked Files & Directories (Default None):
 set :linked_files, %w{config/database.yml config/secrets.yml .env}
