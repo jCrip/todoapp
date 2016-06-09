@@ -14,6 +14,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'puma'
 
+gem 'dotenv-rails'
+
 group :development, :test do
   gem 'byebug'
 end
